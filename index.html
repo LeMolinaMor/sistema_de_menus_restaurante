@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Esto dice que es un documento HTML5 -->
+<html lang="en">
+<head>
+    <!-- Configuración básica de la página -->
+    <meta charset="UTF-8">  <!-- Para que se vean bien las letras con acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Para que se vea bien en el móvil -->
+    <title>Actividad 03</title>  <!-- El título que sale en la pestaña del navegador -->
+    
+    <!-- Aquí enlazo el archivo CSS para los estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Estos divs son donde se van a mostrar los platos y menús -->
+    <!-- El JavaScript va a meter aquí el HTML generado por las funciones mostrarPlatos() y mostrarMenus() -->
+    <div id="contenedor-principal"></div>  <!-- Aquí se ven todos los platos disponibles -->
+    <div id="contenedor-menus"></div>      <!-- Aquí se ven todos los menús disponibles -->
+
+    <!-- Formulario para añadir nuevos platos -->
+    <section class="formulario-plato">
+        <h3>Añadir Nuevo Plato</h3>  <!-- Título de esta sección -->
+        
+        <!-- Campo para escribir el nombre del plato -->
+        <label for="nombre">Nombre del plato:</label>  <!-- El "for" conecta con el "id" del input -->
+        <input type="text" id="nombre" name="nombre">  <!-- Input de texto normal -->
+        
+        <!-- Campo para escribir la descripción del plato -->
+        <label for="descripcion">Descripción del plato:</label>
+        <input type="text" id="descripcion" name="descripcion">  <!-- Otro input de texto -->
+        
+        <!-- Campo para escribir el precio del plato -->
+        <label for="precio">Precio del plato:</label>
+        <input type="number" id="precio" name="precio">  <!-- Input de números nada más -->
+        
+        <!-- Botón que cuando se hace clic ejecuta la función agregarPlato() del JavaScript -->
+        <button id="btnAgregarPlato">AÑADIR PLATO</button>
+    </section>
+
+    <!-- Select para elegir qué plato eliminar -->
+    <select id="selectPlatos">
+        <option value="">Seleccione un plato</option>  <!-- Opción por defecto vacía -->
+        <!-- Aquí el JavaScript va a añadir más opciones con los platos disponibles -->
+    </select>
+
+    <!-- Botón para eliminar el plato seleccionado -->
+    <button id="btnEliminar">ELIMINAR</button>  <!-- Ejecuta eliminarPlato() en el JavaScript -->
+
+    <!-- Formulario para añadir nuevos menús -->
+    <section class="formulario-menu">
+        <h3>Añadir Nuevo Menú</h3>  <!-- Título de esta sección -->
+        
+        <!-- Campo para escribir el nombre del menú -->
+        <label for="nombreMenu">Nombre del menú:</label>
+        <input type="text" id="nombreMenu" name="nombreMenu">  <!-- Input de texto para el nombre -->
+        
+        <!-- Botón que ejecuta agregarMenu() en el JavaScript -->
+        <button id="btnAgregarMenu">AÑADIR MENÚ</button>
+    </section>
+
+    <!-- Sección para añadir platos a menús -->
+    <section class="selecciones">
+        <h3>Añadir Plato a Menú</h3>  <!-- Título de esta sección -->
+        
+        <!-- Select para elegir plato (muestra posición) -->
+        <select id="selectPlatosEliminar">
+            <option value="">Seleccione un plato</option>  <!-- Opción por defecto -->
+            <!-- El JavaScript añade opciones como: "Hamburguesa (Posición: 0)" -->
+        </select>
+
+        <!-- Select para elegir menú -->
+        <select id="selectMenus">
+            <option value="">Seleccione un menú</option>  <!-- Opción por defecto -->
+            <!-- El JavaScript añade opciones con los nombres de los menús -->
+        </select>
+        
+        <!-- Botón para añadir el plato seleccionado al menú seleccionado -->
+        <button id="btnAgregarPlatoAMenu">AÑADIR PLATO A MENÚ</button>  <!-- Ejecuta agregarPlatoAMenu() -->
+    </section>
+
+    <!-- Aquí enlazo el archivo JavaScript -->
+    <!-- "defer" hace que el script espere a que cargue el HTML antes de ejecutarse -->
+    <script src="actividad_restaurante.js" defer></script>
+    <!-- El archivo JavaScript se llama actividad_restaurante.js -->
+</body>
+</html>
