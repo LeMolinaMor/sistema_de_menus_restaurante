@@ -1,0 +1,169 @@
+/* ESTILOS SIMPLES PARA RESTAURANTE - COLORES CREMA */
+/* Diseño compacto para ver todo sin scroll */
+
+/* Estilos generales - fondo crema y tipografía básica */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fef9e7;  /* Fondo crema claro */
+    color: #5d4037;             /* Texto marrón oscuro */
+    margin: 0;
+    padding: 15px;
+    line-height: 1.4;
+}
+
+/* Títulos con colores cálidos */
+h2 {
+    color: #d84315;             /* Naranja oscuro */
+    margin: 10px 0;
+    font-size: 1.3em;
+}
+
+h3 {
+    color: #e65100;             /* Naranja */
+    margin: 15px 0 8px 0;
+    font-size: 1.1em;
+}
+
+/* Contenedores principales - fondo blanco crema */
+#contenedor-principal, 
+#contenedor-menus {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ffe0b2;  /* Borde naranja muy claro */
+}
+
+/* Tarjetas de platos - diseño simple */
+.plato {
+    background: #fff8e1;        /* Fondo amarillo muy claro */
+    border: 1px solid #ffd54f;  /* Borde amarillo */
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+.plato h3 {
+    color: #bf360c;             /* Marrón rojizo */
+    margin: 0 0 5px 0;
+}
+
+.plato p {
+    color: #8d6e63;             /* Marrón medio */
+    margin: 3px 0;
+    font-style: italic;
+}
+
+.plato span {
+    color: #388e3c;             /* Verde para precios */
+    font-weight: bold;
+}
+
+/* Menús - diseño diferenciado */
+.menu {
+    background: #fbe9e7;        /* Fondo rojo muy claro */
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-left: 3px solid #ff8a65; /* Borde lateral naranja */
+}
+
+.menu h3 {
+    background: #ff8a65;        /* Fondo naranja */
+    color: white;
+    padding: 8px 12px;
+    margin: -12px -12px 8px -12px;
+    border-radius: 3px 3px 0 0;
+}
+
+/* Formularios - diseño compacto */
+.formulario-plato, 
+.formulario-menu, 
+.selecciones {
+    background: white;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ffccbc;  /* Borde naranja claro */
+}
+
+/* Etiquetas y campos de formulario */
+label {
+    display: block;
+    margin: 8px 0 3px 0;
+    font-weight: bold;
+    color: #5d4037;
+}
+
+input[type="text"], 
+input[type="number"], 
+select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ffab91;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+/* Botones - colores coherentes */
+button {
+    background: #ff9800;        /* Naranja principal */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 100%;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #f57c00;        /* Naranja más oscuro al pasar mouse */
+}
+
+/* Botón eliminar - rojo */
+#btnEliminar {
+    background: #e53935;
+}
+
+#btnEliminar:hover {
+    background: #c62828;
+}
+
+/* Botones agregar - verde */
+#btnAgregarPlato, 
+#btnAgregarMenu, 
+#btnAgregarPlatoAMenu {
+    background: #43a047;
+}
+
+#btnAgregarPlato:hover, 
+#btnAgregarMenu:hover, 
+#btnAgregarPlatoAMenu:hover {
+    background: #388e3c;
+}
+
+/* Sección de selecciones compacta */
+.selecciones {
+    background: #e3f2fd;        /* Fondo azul muy claro para diferenciar */
+    border: 1px solid #90caf9;
+}
+
+/* Espaciado general más compacto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Asegurar que todo quede compacto */
+.plato, .menu, .formulario-plato, .formulario-menu, .selecciones {
+    margin: 8px 0;
+}
+
+/* Los selects en la sección de selecciones más compactos */
+.selecciones select {
+    margin: 3px 0;
+}
